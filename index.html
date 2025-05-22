@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+</head>
+<body>
+
+    <form action="/SCRIPT/processaForms.php" method="POST">
+        <label for="name">Nome:</label>
+        <input type="text" name="nome" placeholder="Seu nome" required>
+
+        <label for="telefone">Telefone:</label>
+        <input type="tel" name="tel" placeholder="Seu telefone" required>
+
+        <label for="email">E-mail:</label>
+        <input type="email" name="email" placeholder="Seu e-mail" required>
+
+        <label for="assunto">Assunto:</label>
+        <input type="text" name="asst" placeholder="Assunto" required>
+
+        <label for="msg">Mensagem:</label>
+        <input type="text" name="msg" placeholder="Digite sua mensagem" required>
+
+        <button type="submit">Enviar</button>
+    </form>
+    
+</body>
+</html>
