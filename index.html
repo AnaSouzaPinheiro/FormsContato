@@ -1,30 +1,64 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <title>Contato</title>
-</head>
-<body>
+  </head>
+  <body>
+    <div class="box">
+      <img src="IMG/aluno-alegre-trabalhando-em-casa.jpg" alt="" />
 
-    <form action="/SCRIPT/processaForms.php" method="POST">
-        <label for="name">Nome:</label>
-        <input type="text" name="nome" placeholder="Seu nome" required>
+      <div class="inputs">
+        <form action="/SCRIPT/processaForms.php" method="POST">
+          <div class="estilo-label">
+            <label for="name">Nome</label>
+            <input
+              type="text"
+              name="nome"
+              placeholder="Insira seu nome..."
+              required
+            />
+          </div>
 
-        <label for="telefone">Telefone:</label>
-        <input type="tel" name="tel" placeholder="Seu telefone" required>
+          <div class="estilo-label">
+            <label for="email">E-mail</label>
+            <input
+              type="email"
+              name="email"
+              placeholder="Insira seu e-mail..."
+              required
+            />
+          </div>
 
-        <label for="email">E-mail:</label>
-        <input type="email" name="email" placeholder="Seu e-mail" required>
+          <div class="estilo-label">
+            <label for="assunto">Assunto</label>
+            <input
+              type="text"
+              name="asst"
+              placeholder="Insira o assunto..."
+              required
+            />
+          </div>
 
-        <label for="assunto">Assunto:</label>
-        <input type="text" name="asst" placeholder="Assunto" required>
+          <div class="estilo-label">
+            <label for="msg">Mensagem</label>
+            <textarea
+              name="msg"
+              placeholder="Insira sua mensagem..."
+              required
+            ></textarea>
+          </div>
 
-        <label for="msg">Mensagem:</label>
-        <input type="text" name="msg" placeholder="Digite sua mensagem" required>
-
-        <button type="submit">Enviar</button>
-    </form>
-    
-</body>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </body>
 </html>
