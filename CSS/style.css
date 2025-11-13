@@ -11,6 +11,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   background: radial-gradient(
     circle,
     rgba(225, 174, 238, 1) 0%,
@@ -79,6 +80,7 @@ textarea {
   height: 100px;
   max-width: 100%;
   max-height: 250px;
+  padding-top: 15px;
 }
 
 textarea::placeholder {
