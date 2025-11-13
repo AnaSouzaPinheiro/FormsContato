@@ -1,0 +1,14 @@
+{
+    "name": "ana/formscontato",
+    "description": "Página de formulário com PHP e PHPMailer",
+    "type": "project",
+    "authors": [
+        {
+            "name": "AnaSouzaPinheiro",
+            "email": "anapinheirole@gmail.com"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "^6.12"
+    }
+}

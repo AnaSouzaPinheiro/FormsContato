@@ -25,7 +25,7 @@ img {
 }
 
 .box {
-  width: 60%;
+  width: 70%;
   height: 70%;
   display: flex;
   background: white;
@@ -42,12 +42,12 @@ img {
 
 form {
   width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: center;
   padding: 20px 0;
-  gap: 40px;
+  justify-content: space-evenly;
 }
 
 .estilo-label {
@@ -63,6 +63,7 @@ label {
   left: 15px;
   top: -13px;
   padding: 0 15px;
+  z-index: 1;
 }
 
 input,
@@ -70,16 +71,24 @@ textarea {
   height: 45px;
   border-radius: 5px;
   border: 1px solid #d295ff;
+  background-color: white;
   padding: 5px 20px;
 }
 
 textarea {
   height: 100px;
   max-width: 100%;
+  max-height: 250px;
 }
 
 textarea::placeholder {
   padding-top: 10px;
+}
+
+input:focus,
+textarea:focus {
+  box-shadow: 0 0 5px rgba(215, 149, 255, 0.5);
+  background-color: white;
 }
 
 button {
@@ -96,4 +105,33 @@ button:hover {
   cursor: pointer;
   background: #b76cff;
   transition: 0.3s;
+}
+
+label.error {
+  position: relative;
+  color: red;
+  font-size: 12px;
+  left: 0;
+  background: transparent;
+  text-align: center;
+}
+
+#mensagemRetorno {
+  width: 70%;
+}
+
+p.success {
+  padding: 25px;
+  margin-top: 40px;
+  border-radius: 10px;
+  color: green;
+  border: 1px solid green;
+}
+
+p.error {
+  padding: 25px;
+  margin-top: 40px;
+  border-radius: 10px;
+  color: red;
+  border: 1px solid red;
 }

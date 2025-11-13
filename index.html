@@ -16,15 +16,10 @@
       <img src="IMG/aluno-alegre-trabalhando-em-casa.jpg" alt="" />
 
       <div class="inputs">
-        <form action="/SCRIPT/processaForms.php" method="POST">
+        <form action="PHP/envia_form.php" method="POST" id="myForm">
           <div class="estilo-label">
-            <label for="name">Nome</label>
-            <input
-              type="text"
-              name="nome"
-              placeholder="Insira seu nome..."
-              required
-            />
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" placeholder="Insira seu nome..." />
           </div>
 
           <div class="estilo-label">
@@ -33,7 +28,6 @@
               type="email"
               name="email"
               placeholder="Insira seu e-mail..."
-              required
             />
           </div>
 
@@ -41,24 +35,32 @@
             <label for="assunto">Assunto</label>
             <input
               type="text"
-              name="asst"
+              name="assunto"
               placeholder="Insira o assunto..."
-              required
             />
           </div>
 
           <div class="estilo-label">
-            <label for="msg">Mensagem</label>
+            <label for="mensagem">Mensagem</label>
             <textarea
-              name="msg"
+              name="mensagem"
               placeholder="Insira sua mensagem..."
-              required
             ></textarea>
           </div>
 
           <button type="submit">Enviar</button>
         </form>
       </div>
+      <div id="mensagemRetorno"></div>
     </div>
   </body>
+  <script
+    type="text/javascript"
+    src="https://code.jquery.com/jquery-3.7.1.min.js"
+  ></script>
+  <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"
+  ></script>
+  <script type="text/javascript" src="JS/validate.js"></script>
 </html>
